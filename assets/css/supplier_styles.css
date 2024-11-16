@@ -1,0 +1,114 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body>section{
+    display: flex;
+
+}
+.section-1{
+    width: 275px;
+    background-color: midnightblue;
+    height: 100vh;
+}
+.section-1>ul{
+    font-family:"Poppins",sans-serif;
+
+    font-size: 14px;
+    list-style: none;
+}
+.section-1>ul>li{
+    padding: 20px 20px;
+}
+.section-1>ul>li>a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+
+}
+.section-2>.f-row>.div-1>h1{
+    font-family: "Poppins",sans-serif;
+    font-size: 24px;
+    margin: 10px 10px;
+}
+.section-2>.f-row>.div-1>input{
+    padding: 8px 8px;
+    background-color: #eef0f3;
+    border-radius: 5px;
+    border:none;
+    width: 450px;
+
+}
+.section-2>.f-row>.div-1>button{
+    background-color: #2778cb;
+    color: white;
+    font-family: "Poppins",sans-serif;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 8px;
+}
+.section-2>.t-row>.s-row{
+    margin: 20px;
+    font-family: "Poppins",sans-serif;
+
+}
+.t-row{
+    background-color: #d7e7fd;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin: 10px;
+}
+.section-2>.t-row>.s-row>label{
+    width: 150px;
+    padding: 4px 8px;
+    font-family: "Poppins",sans-serif;
+}
+.section-2>.t-row>.s-row>input{
+    width: 250px;
+    padding: 4px 8px;
+    font-family: "Poppins",sans-serif;
+}
+.section-2>.t-row>.s-row>.save{
+    padding: 4px 4px;
+    font-family: "Poppins",sans-serif;
+    background-color: #0056b3;
+    border-radius: 8px;
+    color: white;
+}
+.section-2>.t-row>.s-row>.update{
+    padding: 4px 4px;
+    font-family: "Poppins",sans-serif;
+    background-color: #ee6115;
+    border-radius: 8px;
+    color: white;
+}
+.section-2>.t-row>.s-row>.delete{
+    padding: 4px 4px;
+    font-family: "Poppins",sans-serif;
+    background-color: firebrick;
+    border-radius: 8px;
+    color: white;
+}
+.section-2>.t-row>.s-row>.add-new{
+    padding: 4px 4px;
+    font-family: "Poppins",sans-serif;
+    background-color: #395d04;
+    border-radius: 8px;
+    color: white;
+}
+
+.fv-row{
+    background-color: #f6f6f8;
+    border: 1px solid #00917c;
+    border-radius: 8px;
+    margin: 10px;
+    font-family: "Poppins",sans-serif;
+    font-weight: normal;
+    padding: 8px 8px;
+
+}
+
+
+
+
