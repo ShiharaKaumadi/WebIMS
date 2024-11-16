@@ -1,0 +1,31 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body>section{
+    display: flex;
+    flex-direction: row;
+}
+.section-1{
+    width: 275px;
+
+    background-color: midnightblue;
+    height: 100vh;
+}
+.section-1>ul{
+    font-family:"Poppins",sans-serif;
+
+    font-size: 14px;
+    list-style: none;
+}
+.section-1>ul>li{
+    padding: 20px 20px;
+}
+.section-1>ul>li>a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+
+
+}
