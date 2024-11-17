@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Supplier</title>
+    <title>Inventory</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
           rel="stylesheet">
-    <link href="assets/css/supplier_styles.css" rel="stylesheet">
+    <link href="../assets/css/supplier_styles.css" rel="stylesheet">
+    <link href="../assets/css/inventory_styles.css" rel="stylesheet">
 </head>
 <body>
 <section>
@@ -16,6 +17,7 @@
         <ul>
             <li><a href="dashboard.html">Dashboard</a></li>
             <li><a href="supplier.html">Suppliers</a></li>
+            <li><a href="inventory.html">Inventory</a></li>
             <li><a href="notes.html">View Notes</a></li>
             <li><a href="quotations.html">Quotations</a></li>
             <li><a href="purchaseOrder.html">Purchase Order</a></li>
@@ -25,42 +27,45 @@
     <section class="section-2">
         <div class="f-row">
             <div class="div-1">
-                <h1>Supplier Directory</h1>
+                <h1>Inventory</h1>
                 <input id="search" name="search" type="text" placeholder="search here...">
-                <button>Search</button>
+                <button> Search </button>
             </div>
         </div>
         <div class="t-row">
             <div class="s-row">
-                <label for="supplierId">Supplier ID</label>
-                <input id="supplierId" name="supplierId" type="text">
-                <label for="companyName">Company Name</label>
-                <input id="companyName" name="companyName" type="text">
-                <label for="address">Address</label>
-                <input id="address" name="address" type="text">
+                <label for="stockId">Stock ID</label>
+                <input id="stockId" name="stockId" type="text">
+                <label for="desc">Description</label>
+                <input id="desc" name="desc" type="text">
+                <label for="qty">Qty on Hand</label>
+                <input id="qty" name="qty" type="text">
 
             </div>
             <div class="s-row">
-                <label for="contactNo">Contact No.</label>
-                <input id="contactNo" name="contactNo" type="text">
-                <label for="email">Email</label>
-                <input id="email" name="email" type="text">
-            </div>
-            <div class="s-row">
-                <label for="contactPerson">Contact Person</label>
-                <input id="contactPerson" name="contactPerson" type="text">
+                <label for="unitRate">Unit Rate</label>
+                <input id="unitRate" name="unitRate" type="text">
                 <label for="category">Category</label>
                 <input id="category" name="category" type="text">
                 <label for="subCategory">Sub Category</label>
                 <input id="subCategory" name="subCategory" type="text">
-                <label for="productID">Product ID</label>
-                <input id="productID" name="productID" type="text">
+            </div>
+            <div class="s-row">
+                <label for="preorderstatus">Pre Order Status</label>
+                <input id="preorderstatus" name="preorderstatus" type="text">
+                <label for="availability">Availability</label>
+                <input id="availability" name="availability" type="text">
+                <label for="image">Image</label>
+                <input type="image" src="" alt="" id="image">
+                <button>Browse</button>
+
             </div>
             <div class="s-row">
                 <button class="save" type="submit">Save</button>
                 <button class="update" type="submit">Update</button>
                 <button class="delete" type="submit">Delete</button>
                 <button class="add-new" type="submit">Add New</button>
+                <button class="add-new" type="submit">Create MRN</button>
             </div>
         </div>
         <div class="fr-row">
@@ -68,15 +73,15 @@
                 <table>
                     <thead>
                     <tr>
-                        <th>Supplier ID</th>
-                        <th>Company Name</th>
-                        <th>Address</th>
-                        <th>Email</th>
-                        <th>Contact No.</th>
-                        <th>Contact Person</th>
+                        <th>Stock ID</th>
+                        <th>Description</th>
+                        <th>Qty on Hand</th>
+                        <th>Unit Rate</th>
                         <th>Category</th>
                         <th>Sub Category</th>
-                        <th>Product ID</th>
+                        <th>Pre Order Status</th>
+                        <th>Availability</th>
+                        <th>Image</th>
                     </tr>
                     <tbody>
 
@@ -85,27 +90,7 @@
                 </table>
             </div>
         </div>
-
     </section>
-
 </section>
-<table>
-    <thead>
-    <tr>
-        <th>Supplier ID</th>
-        <th>Company Name</th>
-        <th>Address</th>
-        <th>Email</th>
-        <th>Contact No.</th>
-        <th>Contact Person</th>
-        <th>Category</th>
-        <th>Sub Category</th>
-        <th>Product ID</th>
-    </tr>
-    <tbody>
-    <tr></tr>
-    </tbody>
-    </thead>
-</table>
 </body>
 </html>
